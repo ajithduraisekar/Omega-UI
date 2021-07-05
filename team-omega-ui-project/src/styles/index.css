@@ -1730,7 +1730,7 @@ div.row.mobileview-leaders {
   -webkit-box-shadow: 3px 3px 2px grey;
           box-shadow: 3px 3px 2px grey;
   width: 80px;
-  height: 100%;
+  /* height: 100%; */
   position: relative;
   background-color: #060652;
   padding-top: 2rem;
@@ -2202,3 +2202,4 @@ button.post-button i {
   }
 }
 /*# sourceMappingURL=main.css.map */
+
