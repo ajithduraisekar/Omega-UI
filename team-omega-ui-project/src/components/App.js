@@ -1,28 +1,22 @@
-import React, { Component } from 'react';
-import logo from '../img/logo.svg';
-import '../styles/App.css';
+import React, { Component } from "react";
+import data from "./mock/MockData";
+import InputControl from './inputControl'
+import TextArea from "./textArea";
+import Navbar from "./leftnavbar/navbarroute";
+import SearchBox from "./SearchBox";
+export default class App extends Component {
 
-class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="set">
+        <InputControl Content={this.props.Content} />,
+        <TextArea Content={this.props.Content} />,
+        <Navbar />,
+        <SearchBox Content={this.props.Content} />
       </div>
     );
   }
 }
-
-export default App;
+App.defaultProps = {
+  Content: data
+};
