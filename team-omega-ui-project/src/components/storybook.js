@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-// import Layoutfooter from './common/layout-footer'
-import Leftsidebar from './leftSideBar'
+import Leftsidebar from './common/leftSideBar'
 
 class Storybook extends Component{
     render(){
@@ -10,7 +8,7 @@ class Storybook extends Component{
           
             <Leftsidebar/>
             
-            {/* <Layoutfooter/> */}
+          
             </div>
         )
     }

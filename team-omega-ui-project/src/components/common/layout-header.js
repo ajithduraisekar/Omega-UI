@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import content from "../Mock";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router,Link} from "react-router-dom";
 
 class Layoutheader extends Component {
   render() {
     return (
+      <Router>
       <div>
         <div className="header-container">
           <div className="container-fluid">
@@ -33,11 +34,20 @@ class Layoutheader extends Component {
             id="navbarSupportedContentLG"
           >
             <ul className="navbar-nav mr-auto w-100 justify-content-end">
-              <li className="nav-item ">
+              {/* {content.map(({Cname,id,dlink}) => (
+                  <li className="nav-item " key={id}>
+                  <a className="nav-link">
+                    <Link to={`${dlink}`}>{Cname}</Link>
+                  </a>
+                </li>
+              ))} */}
+
+                  <li className="nav-item">
                 <a className="nav-link">
-                  <Link to={this.props.Content.dashlink}>{this.props.Content.dashboard}</Link>
+                  <Link to={this.props.Content.dashlink}>{this.props.Content.dashboardText}</Link>
                 </a>
               </li>
+              
               <li className="nav-item">
                 <a className="nav-link">
                   <Link to={this.props.Content.teamManagelink}>{this.props.Content.teamManage}</Link>
@@ -55,12 +65,14 @@ class Layoutheader extends Component {
                 </a>
               </li>
             </ul>
+         
           </div>
         </nav>
         <div className="row">
   <div className="col-sm-4 col-md-2 col-lg-2 main-content1"></div>
 </div>
       </div>
+      </Router>
     );
   }
 }

@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import React from "react";
 import { Link } from "react-router-dom";
-import content from "./Mock";
+import content from "../Mock";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class Leftsidebar extends React.Component {
@@ -15,12 +15,6 @@ class Leftsidebar extends React.Component {
     document.getElementById('sidebar-text3').style.display = 'none';
     document.getElementById('compress').style.display = 'none';
     document.getElementById('release').style.display = 'inline-block';
-    // this.myRef.style.width='80px';
-    // this.myRef.style.display = 'none';
-    // this.myRef.style.display = 'none';
-    // this.myRef.style.display = 'none';
-    // this.myRef.style.display = 'none';
-    // this.myRef.style.display = 'inline-block';
   }
   myDisplay() {
     document.getElementById('to-toggle').style.width = '250px';
