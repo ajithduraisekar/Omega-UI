@@ -6,19 +6,13 @@ class Search extends Component {
         super(props);
         this.state = {
             searchString: "",
-            users: []
+            users: [],
         };
         this.handleOnSubmit = this.handleOnSubmit.bind(this);
-    }  
-    // componentDidMount() {
-    //     this.setState({
-    //         users: this.props.users
-    //     });
-    // }
-
+    }
     handleOnSubmit() {
         this.setState({
-            searchString: this.refs.search.value // Refs are a function provided by React to access the DOM element
+            searchString: this.refs.search.value, // Refs are a function provided by React to access the DOM element
             //  and the React element that you might have created on your own. 
         });
     }
@@ -31,14 +25,6 @@ class Search extends Component {
         }
     }
     render() {
-        // let _users = this.state.users;
-        // let search = this.state.searchString.trim().toLowerCase();
-
-        // if (search.length > 0) {
-        //     _users = _users.filter(function (user) {
-        //         return user.name.toLowerCase().match(search);
-        //     });
-        // }
         let _className = this.renderSearch(this.props.className)
 
         return (
@@ -53,15 +39,6 @@ class Search extends Component {
                     id={this.props.id}
                     placeholder={this.props.placeholder}
                     required />
-                {/* <ul>
-                    {_users.map(n => {
-                        return (
-                            <li>
-                                {n.name} <a href="#"></a>
-                            </li>
-                        );
-                    })}
-                </ul> */}
             </div>
         );
     }

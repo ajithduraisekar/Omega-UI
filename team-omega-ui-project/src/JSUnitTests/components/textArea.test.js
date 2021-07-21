@@ -6,4 +6,5 @@ describe('testing the component, passing props', () => {
         const wrapper = shallow(<TextArea />);
         expect(wrapper.find(".form-control").exists()).toBe(true);
     });
+    // it()
 })

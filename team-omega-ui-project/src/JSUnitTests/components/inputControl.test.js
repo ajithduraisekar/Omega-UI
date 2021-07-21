@@ -45,9 +45,9 @@ describe('testing the component', () => {
             ]
         }
     }
-    // it('shouk')
     it('renders if classname exists or not', () => {
         const wrapper = shallow(<InputControl {...props} />);
         expect(wrapper.find(".small").exists()).toBe(true);
     });
-})
+    // it()
+});
