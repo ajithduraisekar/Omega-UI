@@ -18,7 +18,7 @@ describe("testing common input", () => {
     const wrapper = shallow(<Search />);
     wrapper.setState({
       users: []
-    })
+    });
     expect(wrapper.state('users')).toEqual([]);
   });
   it("should render my component", () => {

@@ -7,4 +7,3 @@ describe('testing the component, passing props', () => {
         expect(wrapper.find(".form-control").exists()).toBe(true);
     });
 })
-// it()

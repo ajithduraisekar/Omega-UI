@@ -91,7 +91,7 @@ describe("testing common input", () => {
     expect(commonInput.exists()).toBe(true);
   });
   it("should render my component", () => {
-    let defaultProps = { ...props }
+    let defaultProps = { ...props}
     defaultProps.className = ""
     const wrapper = shallow(<InputField {...defaultProps} />);
     const commonInput = (wrapper.find('input'))
