@@ -10,7 +10,6 @@ describe("testing common input", () => {
   });
   it('renders textarea for handleChange', () => {
     const text = {
-      //   preventDefault: (fn) => fn,
       target: {
         name: "",
       },

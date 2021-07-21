@@ -32,19 +32,15 @@ describe('testing the component', () => {
             users: [
                 {
                     name: "Gayathri",
-
                 },
                 {
                     name: "Teja",
-
                 },
                 {
                     name: "Himanshu",
-
                 },
                 {
                     name: "Satheesh",
-
                 },
             ]
         }

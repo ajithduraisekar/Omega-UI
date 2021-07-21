@@ -97,5 +97,4 @@ describe("testing common input", () => {
     const commonInput = (wrapper.find('input'))
     expect(commonInput.exists()).toBe(true);
   });
-
 });

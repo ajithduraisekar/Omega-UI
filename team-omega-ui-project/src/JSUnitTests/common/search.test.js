@@ -60,4 +60,3 @@ describe("testing common input", () => {
     ).toBe(true);
   });
 });
-
