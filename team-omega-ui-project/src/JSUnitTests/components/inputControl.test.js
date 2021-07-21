@@ -3,7 +3,7 @@ import InputControl from '../../../src/components/inputControl'
 
 describe('testing the component', () => {
     let props = {
-        data : {
+        data: {
             text: "Search Box",
             sub: "Default Search Box",
             sub1: "Search Box With 100% Width",

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import InputField from './common/input';
-// import data from '../components/mock/MockData'
+import data from '../components/mock/MockData'
 class InputControl extends Component {
     render() {
         return (
@@ -73,5 +73,5 @@ class InputControl extends Component {
         );
     }
 }
-// InputControl.defaultprops= { Content:data }
+InputControl.defaultProps= { Content: data }
 export default InputControl;

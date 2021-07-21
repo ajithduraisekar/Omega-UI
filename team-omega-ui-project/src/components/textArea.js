@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import data from './mock/MockData';
+import data from './mock/MockData';
 import TextField from './common/textField';
 import InputField from './common/input'
 class TextArea extends Component {
@@ -51,5 +51,5 @@ class TextArea extends Component {
         )
     }
 }
-// TextArea.defaultProps = { Content: data }
+TextArea.defaultProps = { Content: data }
 export default TextArea;

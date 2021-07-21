@@ -4,8 +4,8 @@ import React from 'react';
 
 describe("testing common input", () => {
   let props = {
-    className : "small",
-    data : {
+    className: "small",
+    data: {
       text: "Search Box",
       sub: "Default Search Box",
       sub1: "Search Box With 100% Width",
@@ -32,28 +32,23 @@ describe("testing common input", () => {
       disabledinput1: "Disabeled Input With 100% Width",
       disable: "Disabled Input",
       users: [
-          {
-              name: "Gayathri",
-
-          },
-          {
-              name: "Teja",
-
-          },
-          {
-              name: "Himanshu",
-
-          },
-          {
-              name: "Satheesh",
-
-          },
+        {
+          name: "Gayathri",
+        },
+        {
+          name: "Teja",
+        },
+        {
+          name: "Himanshu",
+        },
+        {
+          name: "Satheesh",
+        },
       ]
+    }
   }
-}
   it('renders textarea for handleOnChange', () => {
     const title = {
-      preventDefault: (fn) => fn,
       target: {
         name: "",
       },
@@ -102,5 +97,5 @@ describe("testing common input", () => {
     const commonInput = (wrapper.find('input'))
     expect(commonInput.exists()).toBe(true);
   });
- 
+
 });

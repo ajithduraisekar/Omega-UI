@@ -9,13 +9,12 @@ class Search extends Component {
             users: []
         };
         this.handleOnSubmit = this.handleOnSubmit.bind(this);
-    }
-    componentDidMount() {
-        this.setState({
-            users: this.props.users
-        });
-        this.refs.search.focus();
-    }
+    }  
+    // componentDidMount() {
+    //     this.setState({
+    //         users: this.props.users
+    //     });
+    // }
 
     handleOnSubmit() {
         this.setState({
@@ -32,14 +31,14 @@ class Search extends Component {
         }
     }
     render() {
-        let _users = this.state.users;
-        let search = this.state.searchString.trim().toLowerCase();
+        // let _users = this.state.users;
+        // let search = this.state.searchString.trim().toLowerCase();
 
-        if (search.length > 0) {
-            _users = _users.filter(function (user) {
-                return user.name.toLowerCase().match(search);
-            });
-        }
+        // if (search.length > 0) {
+        //     _users = _users.filter(function (user) {
+        //         return user.name.toLowerCase().match(search);
+        //     });
+        // }
         let _className = this.renderSearch(this.props.className)
 
         return (
@@ -54,15 +53,15 @@ class Search extends Component {
                     id={this.props.id}
                     placeholder={this.props.placeholder}
                     required />
-                <ul>
-                    {_users.map(l => {
+                {/* <ul>
+                    {_users.map(n => {
                         return (
                             <li>
-                                {l.name} <a href="#"></a>
+                                {n.name} <a href="#"></a>
                             </li>
                         );
                     })}
-                </ul>
+                </ul> */}
             </div>
         );
     }

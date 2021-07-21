@@ -3,13 +3,11 @@ import ReactDOM from 'react-dom';
 import './styles/index.css';
 import App from './components/App'
 import reportWebVitals from './reportWebVitals';
-import 'font-awesome/css/font-awesome.min.css';
+// import 'font-awesome/css/font-awesome.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    
     <App />
-   
   </React.StrictMode>,
   document.getElementById('root')
 );

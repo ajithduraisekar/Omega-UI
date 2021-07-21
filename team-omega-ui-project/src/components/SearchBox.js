@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Search from './common/search';
-// import data from '../../src/components/mock/MockData'
+import data from '../../src/components/mock/MockData'
 class SearchBox extends Component {
     render() {
         return (
@@ -26,5 +26,5 @@ class SearchBox extends Component {
         )
     }
 }
-// SearchBox.defaultProps = {Content: data}
+SearchBox.defaultProps = {Content: data}
 export default SearchBox;
