@@ -47,7 +47,7 @@ describe("testing common input", () => {
       ]
     }
   }
-  // it()
+
   it('renders textarea for handleOnChange', () => {
     const title = {
       target: {

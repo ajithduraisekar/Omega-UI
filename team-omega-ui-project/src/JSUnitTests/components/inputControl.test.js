@@ -49,5 +49,4 @@ describe('testing the component', () => {
         const wrapper = shallow(<InputControl {...props} />);
         expect(wrapper.find(".small").exists()).toBe(true);
     });
-    // it()
 });

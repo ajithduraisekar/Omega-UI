@@ -31,7 +31,6 @@ describe("testing common input", () => {
   beforeEach(() => {
     wrapper = shallow(<Search {...props} />);
   });
-
   it('should have an `input` element', () => {
     const wrapper = shallow(
       <Search />

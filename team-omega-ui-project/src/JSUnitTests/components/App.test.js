@@ -48,5 +48,5 @@ describe('testing the component', () => {
     it('renders if classname exists or not', () => {
         const wrapper = shallow(<App {...props} />);
         expect(wrapper.find(".set").exists()).toBe(true);
-    });
+    }); 
 })

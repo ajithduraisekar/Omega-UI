@@ -18,5 +18,4 @@ describe("testing common input", () => {
     wrapper.instance().handleChange(text);
     expect(wrapper.find("handleChange").exists()).toBe(false);
   });
-  // it()
 });

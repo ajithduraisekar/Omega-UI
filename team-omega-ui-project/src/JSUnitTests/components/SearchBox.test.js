@@ -6,5 +6,4 @@ describe('testing the component, passing props', () => {
         const wrapper = shallow(<SearchBox />);
         expect(wrapper.find(".large").exists()).toBe(true);
     });
-    // it()
 })
