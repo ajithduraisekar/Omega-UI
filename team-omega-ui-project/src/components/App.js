@@ -12,28 +12,20 @@ import Layoutfooter from "./common/layout-footer";
 import content from "./Mock";
 class App extends Component {
   render() {
-   
-    // const routePath = content.map(({ component, dlink }, id) => 
-    // <Route key={id} path={dlink} component={component} />
-  // );
-
-   
     return (
-     <Router>
+      <Router>
         <Layoutheader />
-      <Switch>
-      <Route path="/dashboard"  component={Dashboard} />
-      <Route path="/teamManagements"  component={teamManagements} />
-      <Route path="/teamContact"  component={teamContact} />
-      <Route path="/storybook"  component={Storybook} />
-         
-      </Switch>
-         
+        <Switch>
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/teamManagements" component={teamManagements} />
+          <Route path="/teamContact" component={teamContact} />
+          <Route path="/storybook" component={Storybook} />
+        </Switch>
 
-      <Layoutfooter /> 
-     </Router>
-    )
-      }
+        <Layoutfooter />
+      </Router>
+    );
+  }
 }
 App.defaultProps = { Content: content };
 export default App;
