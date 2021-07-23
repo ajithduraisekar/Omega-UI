@@ -1,28 +1,31 @@
-import React, { Component } from 'react';
-import logo from '../img/logo.svg';
-import '../styles/App.css';
+import React, { Component } from "react";
 
+import "../styles/App.css";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import Dashboard from "./dashboard";
+import teamContact from "./teamContact";
+import teamManagements from "./teamManagements";
+import Storybook from "./storybook";
+import Layoutheader from "./common/layout-header";
+import Layoutfooter from "./common/layout-footer";
+
+import content from "./Mock";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <Layoutheader />
+        <Switch>
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/teamManagements" component={teamManagements} />
+          <Route path="/teamContact" component={teamContact} />
+          <Route path="/storybook" component={Storybook} />
+        </Switch>
+
+        <Layoutfooter />
+      </Router>
     );
   }
 }
-
+App.defaultProps = { Content: content };
 export default App;
